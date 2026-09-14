@@ -1,0 +1,131 @@
+/* ベースリセット */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ヘッダー */
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9ecef;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+/* ヒーローセクション */
+.hero {
+  background-color: #0d6efd;
+  color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* ボタン */
+.btn-primary {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #0d6efd;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #e6f0ff;
+  color: #0b5ed7;
+}
+
+/* 事業内容 */
+.services {
+  padding: 60px 0;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  color: #212529;
+}
+
+.service-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.service-card {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #0d6efd;
+}
+
+/* フッター */
+.footer {
+  background-color: #212529;
+  color: #ced4da;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* レスポンシブ対応（スマホ対応） */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .service-grid {
+    flex-direction: column;
+  }
+}
